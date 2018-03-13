@@ -9,7 +9,7 @@
 
 <body>
 	<div class="form">
-		<form class="" action="index.html" method="post">
+		<form action="mailto:info@mail.ru?Subject=Анкета студента" method="post">
 			<table class="table">
 				<tr class="tbltr">
 					<th colspan="2">
@@ -28,7 +28,7 @@
 						ФИО:
 					</td>
 					<td>
-						<input type="text" name="fullname">
+						<input type="text" name="fullname" placeholder="Ваше полное имя" required>
 					</td>
 				</tr>
 
@@ -53,7 +53,7 @@
 						Факультет/Институт:
 					</td>
 					<td>
-						<input type="text" name="fak">
+						<input type="text" name="fak" placeholder="Факультет/Институт" required>
 					</td>
 				</tr>
 
@@ -73,7 +73,7 @@
 						Адрес:
 					</td>
 					<td>
-						<input type="text" name="address">
+						<input type="text" name="address" placeholder="Адрес проживания">
 					</td>
 				</tr>
 
@@ -88,7 +88,7 @@
 						<input type="checkbox" name="Архитектура">Архитектура<br>
 						<input type="checkbox" name="Инженерная графика">Инженерная графика<br>
 						<input type="checkbox" name="Теоретическая механика">Теоретическая механика<br>
-						<input type="checkbox" name="Все" checked>Все
+						<input type="checkbox" name="Все">Все
 					</td>
 				</tr>
 
@@ -97,7 +97,7 @@
 						Номер телефона:
 					</td>
 					<td>
-						<input type="text" name="tel">
+						<input type="tel" name="tel" placeholder="Укажите свой телефон">
 					</td>
 				</tr>
 
@@ -110,12 +110,16 @@
 					</td>
 				</tr>
 
-				<tr class="tbltr">
-					<td>
-
+				<tr>
+					<td class="btn">
+						<button class="btn2" type="reset">
+							Сброс
+						</button>
 					</td>
-					<td>
-
+					<td class="btn">
+						<button class="btn1" type="submit">
+							Отправить
+						</button>
 					</td>
 				</tr>
 			</table>

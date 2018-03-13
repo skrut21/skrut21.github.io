@@ -4,6 +4,7 @@
   padding: 0;
   font-family: Arial, sans-serif;
   text-decoration: none;
+  color: #435256;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 
 .form {
   border: 0px solid black;
-  padding-top: 5em;
+  padding-top: 2em;
   width: 800px;
   margin: auto;
   font-size: 1.25em;
@@ -45,5 +46,51 @@ input, select, textarea {
 .valtop {
   vertical-align: text-top;
 }
+
+input, textarea {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #F5F2ED;
+}
+
+input {
+  margin-right: .625em;
+  display: inline;
+}
+
+input:focus, textarea:focus {
+  border: 2px groove #435256;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn1, .btn2 {
+  padding: .3125em;
+  border-radius: 8px;
+  font-size: .8em;
+}
+
+.btn2:hover {
+  background-color: #A46260;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background-color: #88A480;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* input[type=text] {
+  border-radius: 5px;
+} */
 
 /* the end  */

@@ -121,11 +121,50 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .adapt {
+    font-size: .45em;
+    word-spacing: .5em;
+  }
+
+  footer.ftr {
+    padding: 1.25em 2em 1.25em 2em;
+  }
+
+  .con1 ul li {
+    width: 350px;
+  }
+
+  /* #slider {
+    display: none;
+  } */
+
+  .hhh h1 {
+    font-size: 1em;
+  }
+}
+
 /* Основная часть сайта */
 
 main {
   border: 0px solid white;
   display: grid;
+}
+
+#slider1 {
+  display: none;
+  background: #000;
+  border: 0px solid #eaeaea;
+  height: 500px;
+  width: 667px;
+  margin: 0 auto 0;
+  overflow: visible;
+  position: relative;
+}
+
+#mask1 {
+   overflow: hidden;
+   height: 500px;
 }
 
 /* Слайдер */
@@ -161,13 +200,13 @@ main {
 
 /* IMAGE LIST */
 
-#slider ul {
+#slider ul, #slider1 ul {
    margin: 0;
    padding: 0;
    position: relative;
 }
 
-#slider li {
+#slider li, #slider1 li {
    width: 800px;  /* Width Image */
    height: 600px; /* Height Image */
    position: absolute;
@@ -175,23 +214,23 @@ main {
    list-style: none;
 }
 
-#slider li.firstanimation {
+#slider li.firstanimation, #slider1 li.firstanimation {
    animation: cycle 25s linear infinite;
 }
 
-#slider li.secondanimation {
+#slider li.secondanimation, #slider1 li.secondanimation {
    animation: cycletwo 25s linear infinite;
 }
 
-#slider li.thirdanimation {
+#slider li.thirdanimation, #slider1 li.thirdanimation {
    animation: cyclethree 25s linear infinite;
 }
 
-#slider li.fourthanimation {
+#slider li.fourthanimation, #slider1 li.fourthanimation {
    animation: cyclefour 25s linear infinite;
 }
 
-#slider li.fifthanimation {
+#slider li.fifthanimation, #slider1 li.fifthanimation {
    animation: cyclefive 25s linear infinite;
 }
 
@@ -286,12 +325,7 @@ footer {
   color: #435256;
   display: grid;
   grid-template-columns: auto auto;
-
   border: 0px solid white;
-  padding-top: 1.250em;
-  padding-bottom: 1.250em;
-  padding-left: 9.375em;
-  padding-right: 9.375em;
   font-size: 1em;
 }
 
@@ -299,8 +333,12 @@ footer ul {
   list-style-type: none;
 }
 
-footer a:link, a:visited {
+footer a:link, footer a:visited {
   color: #435256;
+}
+
+.ftr {
+  padding: 1.25em 9.375em 1.25em 9.375em;
 }
 
 #con {

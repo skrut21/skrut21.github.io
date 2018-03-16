@@ -1,0 +1,96 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  color: #435256;
+}
+
+body {
+  /* background: url(../img/bgs/Louvre_Pyramid_Glass_Paris_France_Europe_museum_city_night_4000x3000.jpg) no-repeat center center fixed;
+  background-size: cover; */
+  background-color: #E3EAEA;
+}
+
+.form {
+  border: 0px solid black;
+  padding-top: 2em;
+  width: 800px;
+  margin: auto;
+  font-size: 1.25em;
+}
+
+table, td, tr, th {
+  padding: 0.625em;
+}
+
+table {
+  background-color: #B5CCD4;
+  border: 10px inset #A46260;
+  margin: 0 auto;
+}
+
+td {
+  width: 200px;
+}
+
+.descr {
+  text-align: center;
+}
+
+input, select, textarea {
+  font-size: 1em;
+}
+
+.valtop {
+  vertical-align: text-top;
+}
+
+input, textarea {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #F5F2ED;
+}
+
+input {
+  margin-right: .625em;
+  display: inline;
+}
+
+input:focus, textarea:focus {
+  border: 2px groove #435256;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn1, .btn2 {
+  padding: .3125em;
+  border-radius: 8px;
+  font-size: .8em;
+}
+
+.btn2:hover {
+  background-color: #A46260;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background-color: #88A480;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* input[type=text] {
+  border-radius: 5px;
+} */
+
+/* the end  */

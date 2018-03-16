@@ -1,0 +1,40 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+}
+
+body {
+  /* background: url(../img/bgs/Louvre_Pyramid_Glass_Paris_France_Europe_museum_city_night_4000x3000.jpg) no-repeat center center fixed;
+  background-size: cover; */
+  background-color: #E3EAEA;
+}
+
+.logoimg {
+  float: left;
+
+}
+
+.name {
+  align-content: center;
+  width: 500px;
+  height: 115px;
+  margin: 0 auto;
+
+}
+
+.lol {
+  padding-top: 1.35em;
+}
+
+.namee {
+  font-family: 'Marck Script';
+  color: #435256;
+  text-align: left;
+  word-spacing: 0.01em;
+  font-size: 1.5em;
+}
+
+/* the end  */

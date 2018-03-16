@@ -1,0 +1,364 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+}
+
+body {
+  /* background: url(../img/bgs/Louvre_Pyramid_Glass_Paris_France_Europe_museum_city_night_4000x3000.jpg) no-repeat center center fixed;
+  background-size: cover; */
+  background-color: #E3EAEA;
+}
+
+.containerrr {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap:5.7em;
+  justify-content: center;
+}
+
+/* Меню */
+
+.menu {
+  border: 0px solid white;
+  text-align: right;
+  word-spacing: 1.25em;
+  padding-right: 5em;
+  font-size: 2em;
+}
+
+.formm, .menu a, .logo1 {
+  color: #435256;
+}
+
+.mainnn:hover {
+  border-bottom: 3px solid #435256;
+}
+
+.logoimg {
+  float: left;
+  padding-left: 1.25em;
+}
+
+.namee {
+  font-family: 'Marck Script';
+  color: #435256;
+  float: left;
+  text-align: left;
+  margin-top: 0.625em;
+  margin-left: 0.5em;
+  border: 0px solid black;
+  word-spacing: 0.01em;
+}
+
+.nav-cont {
+  border: 0px solid red;
+  padding-top: 35px;
+}
+
+/* Выпадающий список */
+
+.dropbtn {
+    background-color: #E3EAEA;
+    color: #435256;
+    font-size: 1em;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown a {
+  margin-left: -12px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(227, 234, 234, 1);
+    min-width: 250px;
+    z-index: 101;
+}
+
+.dropdown-content a {
+  font-size: .5em;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #A46260
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  text-align: left;
+  word-spacing: .1em;
+}
+
+.dropdown:hover .dropbtn {
+    border-bottom: 3px solid #435256;
+}
+
+/* Адаптация */
+
+@media screen and (max-width: 1700px) {
+  .menu {
+    font-size: 1.5em;
+  }
+
+  .namee {
+    margin-top: 1em;
+  }
+
+  .containerrr {
+    grid-gap: 0em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .adapt {
+    font-size: .45em;
+    word-spacing: .5em;
+  }
+
+  footer.ftr {
+    padding: 1.25em 2em 1.25em 2em;
+  }
+
+  .con1 ul li {
+    width: 350px;
+  }
+
+  /* #slider {
+    display: none;
+  } */
+
+  .hhh h1 {
+    font-size: 1em;
+  }
+}
+
+/* Основная часть сайта */
+
+main {
+  border: 0px solid white;
+  display: grid;
+}
+
+#slider1 {
+  display: none;
+  background: #000;
+  border: 0px solid #eaeaea;
+  height: 500px;
+  width: 667px;
+  margin: 0 auto 0;
+  overflow: visible;
+  position: relative;
+}
+
+#mask1 {
+   overflow: hidden;
+   height: 500px;
+}
+
+/* Слайдер */
+
+#slider {
+   background: #000;
+   border: 0px solid #eaeaea;
+   height: 600px;
+   width: 800px;
+   margin: 0 auto 0;
+   overflow: visible;
+   position: relative;
+}
+
+.hhh {
+  color: #E3EAEA;
+  border: 0px solid red;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  width: 100%;
+}
+
+.hhh h1 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#mask {
+   overflow: hidden;
+   height: 600px;
+}
+
+/* IMAGE LIST */
+
+#slider ul, #slider1 ul {
+   margin: 0;
+   padding: 0;
+   position: relative;
+}
+
+#slider li, #slider1 li {
+   width: 800px;  /* Width Image */
+   height: 600px; /* Height Image */
+   position: absolute;
+   top: -605px; /* Original Position - Outside of the Slider */
+   list-style: none;
+}
+
+#slider li.firstanimation, #slider1 li.firstanimation {
+   animation: cycle 25s linear infinite;
+}
+
+#slider li.secondanimation, #slider1 li.secondanimation {
+   animation: cycletwo 25s linear infinite;
+}
+
+#slider li.thirdanimation, #slider1 li.thirdanimation {
+   animation: cyclethree 25s linear infinite;
+}
+
+#slider li.fourthanimation, #slider1 li.fourthanimation {
+   animation: cyclefour 25s linear infinite;
+}
+
+#slider li.fifthanimation, #slider1 li.fifthanimation {
+   animation: cyclefive 25s linear infinite;
+}
+
+/* ANIMATION */
+
+@keyframes cycle {
+   0%  { top: 0px; } /* When you start the slide, the first image is already visible */
+   4%  { top: 0px; } /* Original Position */
+   16% { top: 0px; opacity:1; z-index:0; } /* From 4% to 16 % = for 3 seconds the image is visible */
+   20% { top: 325px; opacity: 0; z-index: 0; } /* From 16% to 20% = for 1 second exit image */
+   21% { top: -325px; opacity: 0; z-index: -1; } /* Return to Original Position */
+   92% { top: -325px; opacity: 0; z-index: 0; }
+   96% { top: -325px; opacity: 0; } /* From 96% to 100% = for 1 second enter image*/
+   100%{ top: 0px; opacity: 1; }
+}
+
+@keyframes cycletwo {
+   0%  { top: -325px; opacity: 0; } /* Original Position */
+   16% { top: -325px; opacity: 0; }/* Starts moving after 16% to this position */
+   20% { top: 0px; opacity: 1; }
+   24% { top: 0px; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
+   36% { top: 0px; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
+   40% { top: 325px; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
+   41% { top: -325px; opacity: 0; z-index: -1; }   /* Return to Original Position */
+   100%{ top: -325px; opacity: 0; z-index: -1; }
+}
+
+@keyframes cyclethree {
+   0%  { top: -325px; opacity: 0; }
+   36% { top: -325px; opacity: 0; }
+   40% { top: 0px; opacity: 1; }
+   44% { top: 0px; opacity: 1; }
+   56% { top: 0px; opacity: 1; }
+   60% { top: 325px; opacity: 0; z-index: 0; }
+   61% { top: -325px; opacity: 0; z-index: -1; }
+   100%{ top: -325px; opacity: 0; z-index: -1; }
+}
+
+@keyframes cyclefour {
+   0%  { top: -325px; opacity: 0; }
+   56% { top: -325px; opacity: 0; }
+   60% { top: 0px; opacity: 1; }
+   64% { top: 0px; opacity: 1; }
+   76% { top: 0px; opacity: 1; z-index: 0; }
+   80% { top: 325px; opacity: 0; z-index: 0; }
+   81% { top: -325px; opacity: 0; z-index: -1; }
+   100%{ top: -325px; opacity: 0; z-index: -1; }
+}
+@keyframes cyclefive {
+   0%  { top: -325px; opacity: 0; }
+   76% { top: -325px; opacity: 0; }
+   80% { top: 0px; opacity: 1; }
+   84% { top: 0px; opacity: 1; }
+   96% { top: 0px; opacity: 1; z-index: 0; }
+   100%{ top: 325px; opacity: 0; z-index: 0; }
+}
+
+/* PROGRESS BAR */
+
+.progress-bar {
+   position: relative;
+   top: -5px;
+   width: 680px;
+   height: 5px;
+   background: #000;
+   animation: fullexpand 25s ease-out infinite;
+}
+
+/* ANIMATION BAR */
+
+@keyframes fullexpand {
+   /* In these keyframes, the progress-bar is stationary */
+   0%, 20%, 40%, 60%, 80%, 100% { width: 0%; opacity: 0; }
+
+   /* In these keyframes, the progress-bar starts to come alive */
+   4%, 24%, 44%, 64%, 84% { width: 0%; opacity: 0.3; }
+
+   /* In these keyframes, the progress-bar moves forward for 3 seconds */
+   16%, 36%, 56%, 76%, 96% { width: 100%; opacity: 0.7; }
+
+   /* In these keyframes, the progress-bar has finished his path */
+   17%, 37%, 57%, 77%, 97% { width: 100%; opacity: 0.3; }
+
+   /* In these keyframes, the progress-bar will disappear and then resume the cycle */
+   18%, 38%, 58%, 78%, 98% { width: 100%; opacity: 0; }
+}
+
+/* Нижний колонтитул сайта */
+
+footer {
+  border: 1px solid black;
+  color: #435256;
+  display: grid;
+  grid-template-columns: auto auto;
+  border: 0px solid white;
+  font-size: 1em;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer a:link, footer a:visited {
+  color: #435256;
+}
+
+.ftr {
+  padding: 1.25em 9.375em 1.25em 9.375em;
+}
+
+#con {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.con1 ul li {
+  margin-bottom: 1.25em;
+}
+
+.soc-hdr {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.links {
+  margin-top: 0em;
+  font-size: 1.5em;
+  word-spacing: 1.250em;
+}
+
+/* the end  */

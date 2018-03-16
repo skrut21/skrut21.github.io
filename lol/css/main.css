@@ -121,7 +121,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .adapt {
     font-size: .45em;
     word-spacing: .5em;

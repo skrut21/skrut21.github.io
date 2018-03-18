@@ -339,6 +339,19 @@ footer a:link, footer a:visited {
 }
 
 @media screen and (max-width: 800px) {
+  .namee {
+    margin-top: 3em;
+    font-size: .55em;
+  }
+
+  .menu {
+    padding-right: 2.5em;
+  }
+
+  #topnav {
+    padding-top: 4.5em;
+  }
+
   .adapt {
     font-size: .45em;
     word-spacing: .5em;

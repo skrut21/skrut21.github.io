@@ -25,7 +25,6 @@
 
   .slideUp {
     width: 250px;
-    margin: 50px auto;
   }
 
   .goBack {
@@ -43,6 +42,36 @@
   .goBack a:hover {
     background-color: #be8f8e;
   }
+
+  .container {
+    position: relative;
+    border: 0px solid red;
+    width: 650px;
+    margin: 50px auto;
+  }
+
+  .box, .slideRight {
+    display: inline-block;
+  }
+
+  .slideRight {
+    margin-right: 1.25em;
+  }
+
+  .box {
+    vertical-align: top;
+    margin-left: 1.25em;
+    width: 250px;
+  }
+
+  ul li {
+    list-style-type: square;
+    margin-left: 1.25em;
+  }
+
+  ol {
+    margin-top: 1.25em;
+  }
   </style>
 </head>
 <body>
@@ -50,9 +79,32 @@
     Полевич Андрей
     <p>2018</p>
   </div>
-  <div class="slideUp">
-    <img src="../img/lol1.jpg" alt="" class="imgl">
+  <div class="container">
+    <div class="slideRight">
+      <img src="../img/lol1.jpg" alt="" class="imgl">
+    </div>
+    <div class="box slideLeft">
+      <span>Для того чтобы разобраться с языками html и css, я использовал следующие источники:</span>
+      <ol>
+        <li>
+          Электронные ресурсы:
+          <ul>
+            <li>https://www.w3schools.com/</li>
+            <li>http://htmlbook.ru/</li>
+            <li>https://www.youtube.com/</li>
+          </ul>
+        </li>
+        <li>
+          Бумажные источники:
+          <ul>
+            <li>Большая книга CSS3, Дэвид Макфарланд, 2014.</li>
+            <li>HTML5 И CSS3, Веб-разработка по стандартам нового поколения, Брайан Хоган, 2012.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
   </div>
+
   <div class="goBack">
     <a href="../index.html">Главная</a>
   </div>

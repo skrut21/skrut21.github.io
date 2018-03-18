@@ -29,6 +29,10 @@ body {
   font-size: 2em;
 }
 
+#hamburgerr {
+  display: none;
+}
+
 .formm, .menu a, .logo1 {
   color: #435256;
 }
@@ -339,13 +343,22 @@ footer a:link, footer a:visited {
 }
 
 @media screen and (max-width: 800px) {
+  #hamburgerr {
+    display: inline-block;
+    margin-top: .7em;
+  }
+
+  .hamburger-box {
+    display: inline-block;
+  }
+
   .namee {
-    margin-top: 3em;
-    font-size: .55em;
+    margin-top: 1.5em;
+    font-size: .8em;
   }
 
   .menu {
-    padding-right: 2.5em;
+    padding-right: 1em;
   }
 
   #topnav {
@@ -355,6 +368,10 @@ footer a:link, footer a:visited {
   .adapt {
     font-size: .45em;
     word-spacing: .5em;
+  }
+
+  .adapt {
+    display: none;
   }
 
   #slider {

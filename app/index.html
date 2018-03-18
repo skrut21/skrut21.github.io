@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Инженерно-строительный институт Санкт-Петербургский политехнический университет Петра Великого</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="css/dist/hamburgers.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/animations.css">
 	<link href="css/hamburgers.css" rel="stylesheet" type="text/css">
@@ -21,6 +22,11 @@
 					ПОЛИТЕХ<br>
 					Инженерно-строительный институт
 				</div>
+				<span id="hamburgerr" class="hamburger hamburger--collapse">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</span>
 				<div class="adapt">
 					<div class="nav-cont" id="topnav">
 						<a href="index.html" class="mainnn">Главная</a>
@@ -135,6 +141,20 @@
 			</div>
 		</footer>
 	</div>
+
+	<script>
+		var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+
+    var hamburgers = document.querySelectorAll(".hamburger");
+    if (hamburgers.length > 0) {
+      forEach(hamburgers, function(hamburger) {
+        hamburger.addEventListener("click", function() {
+          this.classList.toggle("is-active");
+        }, false);
+      });
+    }
+  </script>
+
 </body>
 
 </html>

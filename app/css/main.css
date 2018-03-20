@@ -15,7 +15,7 @@ body {
 .containerrr {
   display: grid;
   grid-template-columns: 100%;
-  grid-gap:5.7em;
+  grid-gap: 4.9em;
   justify-content: center;
 }
 

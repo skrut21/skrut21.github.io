@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Инженерно-строительный институт Санкт-Петербургский политехнический университет Петра Великого</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/adapt.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/animations.css">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<script defer src="js/fontawesome-all.js"></script>
+	<!-- fotorama -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<link  href="css/fotorama.css" rel="stylesheet">
+	<script src="js/fotorama.js"></script>
+	<!-- fotorama -->
+</head>
+
+<body>
+	<div class="containerrr">
+		<header>
+			<nav class="menu">
+				<a href="index.html" class="mainnn"><img src="img/logo/logo1.svg" alt="logo" class="logoimg"></a>
+				<div class="namee">
+					ПОЛИТЕХ<br>
+					Инженерно-строительный институт
+				</div>
+				<div class="hamb" onclick="openNav()">
+					&#9776; <span class="menu_hide">Меню</span>
+				</div>
+				<div class="adapt">
+					<div class="nav-cont" id="topnav">
+						<a href="index.html" class="mainnn">Главная</a>
+						<div class="dropdown">
+							<button class="dropbtn">Об институте</button>
+							<div class="dropdown-content">
+								<a href="pages/history/index.html">История ИСИ</a>
+								<a href="pages/directorate/index.html">Дирекция</a>
+								<a href="pages/units/index.html">Подразделения</a>
+							</div>
+						</div>
+						<div class="dropdown">
+							<button class="dropbtn">Абитуриентам</button>
+							<div class="dropdown-content">
+								<a href="pages/infoab/index.html">Информация приемной комиссии</a>
+								<a href="http://www.spbstu.ru/abit/bachelor/" target="_blank">Прием в бакалавриат</a>
+								<a href="http://www.spbstu.ru/abit/master/" target="_blank">Прием в магистратуру</a>
+							</div>
+						</div>
+						<div class="dropdown">
+							<button class="dropbtn">Студентам</button>
+							<div class="dropdown-content">
+								<a href="http://ruz.spbstu.ru/faculty/92/groups" target="_blank">Расписание занятий</a>
+							</div>
+						</div>
+						<a href="pages/framed/index.html"><span class="formm fab fa-wpforms pulse"></span></a>
+						<div class="tooltip tossing"><a href="pages/author.html"><span class="formm fas fa-address-card tossing"></span></a>
+						  <span class="tooltiptext">Информация об авторе</span>
+						</div>
+					</div>
+				</div>
+
+				<div id="IpadNav" class="overlay">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<div class="overlay-content">
+						<div class="wrapper1">
+							<a href="index.html">Главная</a>
+							<div class="idiv">Об институте</div>
+							<div class="dropdown-content-ipad">
+								<a href="#">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<div id="slider">
+				<div id="hhh"><h1>Занимаемся строительством вашего будущего!</h1></div>
+				<div id="mask">
+					<ul>
+						<li class="firstanimation">
+							<img src="img/unique structures/5.jpg" alt="5">
+						</li>
+						<li class="secondanimation">
+							<img src="img/unique structures/6.jpg" alt="6">
+						</li>
+						<li class="thirdanimation">
+							<img src="img/unique structures/7.jpg" alt="7">
+						</li>
+						<li class="fourthanimation">
+							<img src="img/unique structures/8.jpg" alt="8">
+						</li>
+						<li class="fifthanimation">
+							<img src="img/unique structures/9.jpg" alt="9">
+						</li>
+					</ul>
+				</div>
+				<div class="progress-bar"></div>
+			</div>
+
+			<div class="fotorama"
+					 data-width="100%"
+					 data-ratio="800/600"
+					 data-autoplay="3000"
+					 data-stopautoplayontouch="false"
+					 data-arrows="false"
+					 data-click="false"
+					 data-swipe="true">
+			  <img src="img/unique structures/5.jpg">
+			  <img src="img/unique structures/6.jpg">
+				<img src="img/unique structures/7.jpg">
+				<img src="img/unique structures/8.jpg">
+				<img src="img/unique structures/9.jpg">
+			</div>
+		</main>
+
+		<footer class="ftr">
+			<div class="contacts">
+				<span id="contacts-h">Контакты:</span>
+				<br><br>
+				<div class="contacts-text">
+					<ul>
+						<li>
+							<span class="fas fa-map-marker-alt"></span>
+							&nbsp;&nbsp;195251, Санкт-Петербург, Политехническая ул., 29 корпус 11, СПбПУ&nbsp;&nbsp;
+						</li>
+						<li>
+							<span class="fas fa-phone"></span>
+							<a href="tel:+78125352509">&nbsp;&nbsp;+7 (812) 535 25 09&nbsp;&nbsp;</a>
+						</li>
+						<li>
+							<span class="fas fa-envelope"></span>
+							<a href="mailto:director@ice.spbstu.ru">&nbsp;&nbsp;director@ice.spbstu.ru</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="social-networks">
+				<span class="social-networks-hdr">Социальные сети:</span>
+				<div class="social-networks-links">
+					<a href="https://youtu.be/aGGcP6Ep19Q" target="_blank"><span class="fab fa-youtube fa-2x"></span></a>
+					<a href="https://www.instagram.com/nikolai.vatin/" target="_blank"><span class="fab fa-instagram fa-2x"></span></a>
+					<a href="https://vk.com/ice_spbstu"  target="_blank"><span class="fab fa-vk fa-2x"></span></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script>
+	function openNav() {
+		document.getElementById("IpadNav").style.height = "100%";
+	}
+
+	function open2Nav() {
+		document.getElementById("dropdown-content-ipad").style.display = "block";
+	}
+
+	function closeNav() {
+		document.getElementById("IpadNav").style.height = "0%";
+	}
+
+	function close2Nav() {
+		document.getElementById("dropdown-content-ipad").style.display = "none";
+	}
+  </script>
+
+</body>
+
+</html>

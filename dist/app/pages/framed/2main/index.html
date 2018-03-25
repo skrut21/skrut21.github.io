@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Форма | Инженерно-строительный институт Санкт-Петербургский политехнический университет Петра Великого</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script defer src="../../../js/fontawesome-all.js"></script>
+</head>
+
+<body>
+	<div class="form">
+		<form action="mailto:info@mail.ru?Subject=Анкета студента" method="post">
+			<table class="table">
+				<tr class="tbltr">
+					<th colspan="2">
+						Анкета для студента
+					</th>
+				</tr>
+
+				<tr class="tbltr">
+					<td colspan="2" class="descr">
+						Данная анкета предназначена для сбора базовой информации о студeнтах
+					</td>
+				</tr>
+
+				<tr class="tbltr">
+					<td>
+						ФИО:
+					</td>
+					<td>
+						<input type="text" name="fullname" placeholder="Ваше полное имя" required>
+					</td>
+				</tr>
+
+				<tr class="tbltr">
+					<td>
+						Курс:
+					</td>
+					<td>
+						<select>
+							<option value="1 курс">1 курс</option>
+							<option value="2 курс">2 курс</option>
+							<option value="3 курс">3 курс</option>
+							<option value="4 курс">4 курс</option>
+							<option value="5 курс">5 курс</option>
+							<option value="6 курс">6 курс</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr class="tbltr">
+					<td>
+						Факультет/Институт:
+					</td>
+					<td>
+						<input type="text" name="fak" placeholder="Факультет/Институт" required>
+					</td>
+				</tr>
+
+				<tr class="tbltr valtop">
+					<td>
+						Форма обучения:
+					</td>
+					<td>
+						<input type="radio" name="Форма" id="form" value="Очная" checked>Очная<br/>
+						<input type="radio" name="Форма" value="Заочная" />Заочная<br/>
+						<input type="radio" name="Форма" value="Очно-заочная" />Очно-заочная</td>
+					</td>
+				</tr>
+
+				<tr class="tbltr">
+					<td>
+						Адрес:
+					</td>
+					<td>
+						<input type="text" name="address" placeholder="Адрес проживания">
+					</td>
+				</tr>
+
+				<tr class="tbltr valtop">
+					<td>
+						Интересующие дисциплины:
+					</td>
+					<td>
+						<input type="checkbox" name="math">Математика<br>
+						<input type="checkbox" name="Химия">Химия<br>
+						<input type="checkbox" name="Физика">Физика<br>
+						<input type="checkbox" name="Архитектура">Архитектура<br>
+						<input type="checkbox" name="Инженерная графика">Инженерная графика<br>
+						<input type="checkbox" name="Теоретическая механика">Теоретическая механика<br>
+						<input type="checkbox" name="Все">Все
+					</td>
+				</tr>
+
+				<tr class="tbltr">
+					<td>
+						Номер телефона:
+					</td>
+					<td>
+						<input type="tel" name="tel" placeholder="Укажите свой телефон">
+					</td>
+				</tr>
+
+				<tr class="tbltr">
+					<td class="valtop">
+						Дополнительная информация:
+					</td>
+					<td>
+						<textarea name="dopinfo" rows="5" cols="23"></textarea>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="btn">
+						<button class="btn2" type="reset">
+							Сброс
+						</button>
+					</td>
+					<td class="btn">
+						<button class="btn1" type="submit">
+							Отправить
+						</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+
+</html>

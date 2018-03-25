@@ -1,0 +1,39 @@
+/* Adaptation */
+@media screen and (max-width: 1700px) {
+  .menu {
+    font-size: 1.5em; }
+  .namee {
+    margin-top: 1em; }
+  .containerrr {
+    grid-gap: 1.25em; } }
+
+@media screen and (max-width: 1024px) {
+  .hamb {
+    display: block; }
+  .namee {
+    margin-top: 1.5em;
+    font-size: .8em; }
+  .menu {
+    padding-right: 1em; }
+  #topnav {
+    padding-top: 4.5em; }
+  .adapt {
+    font-size: .45em;
+    word-spacing: .5em;
+    display: none; }
+  #slider {
+    display: none; }
+  footer.ftr {
+    padding: 1.25em 2em 1.25em 2em; }
+  .contacts-text ul li {
+    width: 350px; }
+  .hhh h1 {
+    font-size: 1em; }
+  .fotorama {
+    display: block; } }
+
+@media screen and (max-width: 400px) {
+  .name {
+    font-size: 0.5em; }
+  .menu_hide {
+    display: none; } }

@@ -1,0 +1,8 @@
+/* Adaptation */
+@media screen and (max-width: 1850px) {
+  .menu {
+    font-size: 1.5em; }
+  .namee {
+    margin-top: 1em; }
+  .containerrr {
+    grid-gap: 1.25em; } }

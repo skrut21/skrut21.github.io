@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Форма</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+font-family: Arial;
+text-decoration: none;
+background-color: #E7E5E8;
+color: #39373a;
+}
+td {
+vertical-align: top;
+padding: 5px;
+}
+.btn {
+background-color: white;
+border: 2px solid white;
+border-radius: 5px;
+padding: 2px;
+}
+.btn:hover {
+background-color: #f2f2f2;
+}
+</style>
+</head>
+
+<body>
+<form action="mailto:max@mail.ru?Subject=Анкета студента" method="post">
+<table>
+<tr>
+<td colspan="4" style="padding-bottom: 20px; text-align: center;">
+<h2>Анкета для студента</h2>
+</td>
+</tr>
+
+<tr>
+<td>ФИО:</td>
+<td><input type="text" name="полное имя" required></td>
+<td>Курс:</td>
+<td>
+<select name="курс">
+<option value="1 курс">1 курс</option>
+<option value="2 курс">2 курс</option>
+<option value="3 курс">3 курс</option>
+<option value="4 курс">4 курс</option>
+<option value="5 курс">5 курс</option>
+<option value="6 курс">6 курс</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>
+Факультет/Институт:
+</td>
+<td>
+<input type="text" name="факультет" required>
+</td>
+
+<td>
+Адрес:
+</td>
+<td>
+<input type="text" name="address">
+</td>
+</tr>
+
+<tr class="top">
+<td>
+Форма обучения:
+</td>
+<td>
+<input type="radio" value="Очная" checked>Очная<br/>
+<input type="radio" value="Заочная" />Заочная<br/>
+<input type="radio" value="Очно-заочная" />Очно-заочная</td>
+</td>
+<td>
+Интересующие дисциплины:
+</td>
+<td>
+<input type="checkbox" value="Математика">Математика<br>
+<input type="checkbox" value="Химия">Химия<br>
+<input type="checkbox" value="Физика">Физика<br>
+<input type="checkbox" value="Архитектура">Архитектура<br>
+<input type="checkbox" value="Инженерная графика">Инженерная графика<br>
+<input type="checkbox" value="Теоретическая механика">Теоретическая механика<br>
+<input type="checkbox" value="Все">Все
+</td>
+</tr>
+
+<tr>
+<td class="valtop">
+Дополнительная информация:
+</td>
+<td>
+<textarea name="Дополнительная информация" rows="5" cols="23"></textarea>
+</td>
+<td>
+Номер телефона:
+</td>
+<td>
+<input type="tel" name="телефон">
+</td>
+</tr>
+
+<tr>
+<td>
+<button class="btn" type="reset">
+	Сброс
+</button>
+</td>
+<td>
+<button class="btn" type="submit">
+	Отправить
+</button>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

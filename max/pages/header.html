@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>header</title>
+</head>
+<style>
+* {
+margin: 0;
+padding: 0;
+font-family: Arial;
+text-decoration: none;
+background-color: #E7E5E8;
+}
+.logo {
+float: left;
+margin: 10px 0 0 10px;
+}
+.menu_table {
+display: inline;
+float: left;
+margin-top: 25px;
+margin-left: 100px;
+font-size: 20px;
+}
+tr, td {
+padding: 10px;
+}
+td {
+text-align: center;
+vertical-align: middle;
+}
+.menu_btn {
+color: #39373a;
+
+transition-property: color;
+transition-duration: 0.4s;
+transition-timing-function: ease-in;
+transition-delay: 0.1s;
+}
+.menu_btn:hover {
+color: #A1928C;
+}
+</style>
+<body>
+<a href="main.html" target="main">
+<img src="../images/logo.svg" alt="1" class="logo">
+</a>
+<table class="menu_table">
+<tr>
+<td><a href="main.html" class="menu_btn" target="main">Главная</a></td>
+<td><a href="side_menu_1.html" class="menu_btn" target="side">Об институте</a></td>
+<td><a href="side_menu_2.html" class="menu_btn" target="side">Абитуриентам</a></td>
+<td><a href="side_menu_3.html" class="menu_btn" target="side">Студентам</a></td>
+<td><a href="form.html" class="menu_btn" target="main">Форма</a></td>
+</tr>
+</table>
+</body>
+</html>
